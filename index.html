@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <title>Détection du type d'idevice</title>
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <title>Mon effet Cardboard</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body>
-    <div id="image-container"></div>
+    <a-scene vr-mode-ui="enabled: true">
+      <!-- Ajoutez vos objets ici. Par exemple, un cube : -->
+      <a-box position="0 2 -5" rotation="0 45 45" color="#4CC3D9"></a-box>
+      <!-- La lumière et la caméra sont ajoutées pour améliorer l'expérience -->
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-camera position="0 0 0"></a-camera>
+    </a-scene>
   </body>
 </html>
